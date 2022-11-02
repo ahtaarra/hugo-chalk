@@ -174,7 +174,8 @@ figure {
 }
 
 figcaption {
-  display: inline;
+  display: table-caption;
+  caption-side: top;
   text-align: right;
   font-style: italic;
   font-size: smaller;
