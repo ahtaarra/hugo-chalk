@@ -176,8 +176,8 @@ figure {
 
 
 figcaption {
-  transform: rotate(-90deg);
-  transform-origin: top right;
+  transform-origin: 0 -30px;
+  text-align: right;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
