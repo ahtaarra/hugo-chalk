@@ -1,0 +1,13 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+
+
+<figure>
+  <p><img src="{{ $src }}"
+	  alt="{{ $alt }}"
+	  decoding="async">
+  <figcaption>{{ $caption }}</figcaption>
+ </p>
+</figure>
+
