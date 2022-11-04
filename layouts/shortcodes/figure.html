@@ -1,12 +1,19 @@
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
-{{ $caption := .Get "caption" }}
+{{ $title := .Get "title" }}
+{{ $author := .Get "$author" }}
+{{ $linkauthor := .Get "$linkauthor" }}
+{{ $credit := .Get "$credit" }}
 
 <div class="center">
   <figure>
     <img src="{{ $src }}"
 	    alt="{{ $alt }}"
 	    decoding="async">
-      <figcaption>{{ $caption }}</figcaption>
+    <figcaption>{{ $title }}
+      by
+      <a href={{ $linkauthor }}>{{ $author }}</a>
+      ({{ $credit }})
+    </figcaption>
   </figure>
 </div>
