@@ -168,7 +168,7 @@ img {
 }
 
 figure {
-    display: table;
+  display: table;
   border: thin solid;
   padding: 5px;
   margin: auto;
@@ -176,13 +176,15 @@ figure {
 
 
 figcaption {
-  transform-origin: 0 -30px;
+  display: table-caption;
+  caption-side: top;
   text-align: right;
   font-style: italic;
   font-size: smaller;
   text-indent: 0;
   padding: 2px;
 }
+
 figcaption p {
   margin: 0;
 }
