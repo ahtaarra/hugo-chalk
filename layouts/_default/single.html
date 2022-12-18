@@ -21,7 +21,10 @@
     </a>
   </div>
 
+  <strong>this is a test</strong>
+  
   {{ with site.Params.discus_identifier }}
+  <strong>this is a second test</strong>
     <div id="disqus_thread" class="article-comments"></div>
     {{ template "_internal/disqus.html" . }}
   {{ end }}
