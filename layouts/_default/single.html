@@ -23,8 +23,10 @@
 
   <strong>this is a test:
     A
-    b {{ printf "%s" site.Params.discus_identifier }}
-    c {{ printf "%s" $.Site.Params.discus_identifier }}
+    b {{ printf "%s" .Title }}
+    c {{ printf "%s" $.Params.discus_identifier }}
+    d {{ printf "%s" $.Params.disqusShortname }}
+    e {{ printf "%s" $.Params.discus_identifier }}
     B
     b {{ printf "%s" site.Params.disqus_identifier }}
     c {{ printf "%s" $.Site.Params.disqus_identifier }}
