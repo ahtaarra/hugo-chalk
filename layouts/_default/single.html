@@ -23,11 +23,17 @@
 
   <strong>this is a test:
     A
-    {{ $.Site.Params.discus_identifier }}
+    a $.Site.Params.discus_identifier
+    b site.Params.discus_identifier
+    c {{ $.Site.Params.discus_identifier }}
     B
-    {{ $.Site.Params.disqus_identifier }}
+    a $.Site.Params.disqus_identifier
+    b site.Params.disqus_identifier
+    c {{ $.Site.Params.disqus_identifier }}
     C
-    {{ $.Site.Params.disqusShortname }}
+    a $.Site.Params.disqusShortname
+    b site.Params.disqusShortname
+    c {{ $.Site.Params.disqusShortname }}
   </strong>
   
   {{ with site.Params.discus_identifier }}
