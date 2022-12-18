@@ -31,7 +31,9 @@
   
   {{ with $.Site.DisqusShortname }}
   <strong>this is a second test</strong>
-    <div id="disqus_thread" class="article-comments"></div>
+    <div id="disqus_thread" class="article-comments">
+      {{ template "_internal/disqus.html" . }}
+    </div>
   {{ end }}
 </article>
 {{ end }}
