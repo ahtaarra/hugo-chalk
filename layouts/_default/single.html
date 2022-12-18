@@ -23,19 +23,12 @@
 
   <strong>this is a test:
     A
-    b {{ printf "%s" .Title }}
-    c {{ printf "%s" $.Params.discus_identifier }}
-    d {{ printf "%s" $.Params.disqusShortname }}
-    e {{ printf "%s" $.Params.discus_identifier }}
-    f {{ printf "%s" $.Site.BaseURL }}
-    g {{ printf "%s" site.BaseURL }}
-    B
-    b {{ printf "%s" site.Params.disqus_identifier }}
-    c {{ printf "%s" $.Site.Params.disqus_identifier }}
-    d {{ printf "%s" site.Params.twitter }}
-    C
-    b {{ printf "%s" site.Params.disqusShortname }}
-    c {{ printf "%s" $.Site.Params.disqusShortname }}
+    a {{ printf "%s" site.discus_identifier }} 
+    b {{ printf "%s" $.Site.discus_identifier }}
+    c {{ printf "%s" site.disqus_identifier }} 
+    d {{ printf "%s" $.Site.disqus_identifier }}
+    e {{ printf "%s" site.disqusShortname }}
+    f {{ printf "%s" $.Site.disqusShortname }}
   </strong>
   
   {{ with site.Params.discus_identifier }}
