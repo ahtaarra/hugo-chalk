@@ -30,9 +30,10 @@
   </strong>
   
   {{ with $.Site.DisqusShortname }}
+    {{ $myv := . }}
   <strong>this is a second test</strong>
     <div id="disqus_thread" class="article-comments">
-      {{ template "_internal/disqus.html" . }}
+      {{ template "_internal/disqus.html" $myv }}
     </div>
   {{ end }}
 </article>
