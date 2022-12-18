@@ -22,20 +22,11 @@
   </div>
 
   <strong>this is a test:
-    A
-    b {{ printf "%s" .Title }}
     f {{ printf "%s" $.Site.DisqusShortname }}
     g {{ printf "%s" site.DisqusShortname }}
-    B
-    b {{ printf "%s" site.Params.disqus_identifier }}
-    c {{ printf "%s" $.Site.Params.disqus_identifier }}
-    d {{ printf "%s" site.Params.twitter }}
-    C
-    b {{ printf "%s" site.Params.disqusShortname }}
-    c {{ printf "%s" $.Site.Params.disqusShortname }}
   </strong>
   
-  {{ with site.Params.discus_identifier }}
+  {{ with site.DisqusShortname }}
   <strong>this is a second test</strong>
     <div id="disqus_thread" class="article-comments"></div>
     {{ template "_internal/disqus.html" . }}
