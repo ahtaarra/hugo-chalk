@@ -23,8 +23,19 @@
 
   <strong>this is a test:
     A
-    e {{ printf "%s" site.baseURL }}
-    f {{ printf "%s" $.Site.baseURL }}
+    b {{ printf "%s" .Title }}
+    c {{ printf "%s" site.discus_identifier }}
+    d {{ printf "%s" $.Params.disqusShortname }}
+    e {{ printf "%s" $.Params.discus_identifier }}
+    f {{ printf "%s" $.Site.BaseURL }}
+    g {{ printf "%s" site.BaseURL }}
+    B
+    b {{ printf "%s" site.Params.disqus_identifier }}
+    c {{ printf "%s" $.Site.Params.disqus_identifier }}
+    d {{ printf "%s" site.Params.twitter }}
+    C
+    b {{ printf "%s" site.Params.disqusShortname }}
+    c {{ printf "%s" $.Site.Params.disqusShortname }}
   </strong>
   
   {{ with site.Params.discus_identifier }}
