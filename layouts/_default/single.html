@@ -23,7 +23,7 @@
 
   {{ with site.Params.discus_identifier }}
     <div id="disqus_thread" class="article-comments"></div>
-    {{ partial "disqus.html" . }}
+    {{ template "_internal/disqus.html" . }}
   {{ end }}
 </article>
 {{ end }}
