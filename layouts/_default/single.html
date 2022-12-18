@@ -23,8 +23,8 @@
 
   <strong>this is a test:
     A
-    e {{ printf "%s" site.disqusShortname }}
-    f {{ printf "%s" $.Site.disqusShortname }}
+    e {{ printf "%s" site.baseURL }}
+    f {{ printf "%s" $.Site.baseURL }}
   </strong>
   
   {{ with site.Params.discus_identifier }}
