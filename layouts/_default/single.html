@@ -21,7 +21,20 @@
     </a>
   </div>
 
-  <strong>this is a test: A{{ site.Params.discus_identifier }} B{{ site.Params.disqus_identifier }} C{{ site.Params.disqusShortname }} </strong>
+  <strong>this is a test:
+    A
+    {{ with site.Params.discus_identifier }}
+    .
+    {{ end }}
+    B
+    {{ with site.Params.disqus_identifier }}
+    .
+    {{ end }}
+    C
+    {{ with site.Params.disqusShortname }}
+    .
+  {{ end }}
+  </strong>
   
   {{ with site.Params.discus_identifier }}
   <strong>this is a second test</strong>
