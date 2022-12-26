@@ -10,7 +10,7 @@ Demo website: https://chalk-hugo-demo.onrender.com/
 
 ### Erwan's fork of Chalk
 
-This part is specific to the fork by Erwan, see below for the content of the [oriinal README](https://github.com/ph-ph/chalk). This fork implements a few minor additions:
+This part is specific to the fork by Erwan, see below for the content of the [original README](https://github.com/ph-ph/chalk). This fork implements a few minor additions:
 
 - Added a "social icon" and related mechanism for mastodon.
 
