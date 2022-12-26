@@ -1,3 +1,5 @@
+
+
 # Chalk
 Chalk is a port of [Nielsen Ramon's Jekyll theme](https://github.com/nielsenramon/chalk) to [Hugo](https://gohugo.io) .
 
@@ -5,6 +7,19 @@ Chalk is a port of [Nielsen Ramon's Jekyll theme](https://github.com/nielsenramo
 
 Most of the theme features have been preserved, except for optional tag-based navigation and theme-specific css for syntax highlighting.
 Demo website: https://chalk-hugo-demo.onrender.com/
+
+### Erwan's fork of Chalk
+
+This part is specific to the fork by Erwan, see below for the content of the [oriinal README](https://github.com/ph-ph/chalk). This fork implements a few minor additions:
+
+- Added a "social icon" and related mechanism for mastodon.
+
+- Addded Disqus' comments (with the option to prevent [the local issue](https://gohugo.io/templates/internal/#conditional-loading-of-disqus-comments)).
+
+- Added a couple shortcodes for displaying images with custom captions (including links).
+
+- Added 'licensed under CC BY 4.0' in the footer.
+
 
 ## Contents
 
