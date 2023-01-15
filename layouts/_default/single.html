@@ -21,17 +21,17 @@
     </a>
   </div>
 
-  {{ with .Site.cusdisId }}
+  var cusdis_id = '{{ .Site.cusdisId }}';
+
      <div  class="article-comments">
        <div id="cusdis_thread" 
 	  data-host="https://cusdis.com"
-	  data-app-id=.
+	  data-app-id=cusdis_id
 	  data-page-id="{{ .File.UniqueID }}"
 	  data-page-url="{{ .Permalink }}"
 	  data-page-title="{{ .Title }}">
        </div>
        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
      </div>
-  {{ end }}
 </article>
 {{ end }}
