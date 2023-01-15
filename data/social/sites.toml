@@ -81,3 +81,7 @@ title="Ethereum"
 [email]
 url="mailto:"
 title="Email"
+
+[mastodon]
+url=""
+title="Mastodon"
