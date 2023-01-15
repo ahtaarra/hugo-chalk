@@ -21,9 +21,15 @@
     </a>
   </div>
 
-  {{ with site.Params.discus_identifier }}
-    <div id="disqus_thread" class="article-comments"></div>
-    {{ partial "disqus.html" . }}
+  {{ with site.Params.cusdis_id }}
+     <div id="cusdis_thread"
+	  data-host="https://cusdis.com"
+	  data-app-id=.
+	  data-page-id="{{ PAGE_ID }}"
+	  data-page-url="{{ PAGE_URL }}"
+	  data-page-title="{{ PAGE_TITLE }}">
+     </div>
+     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
   {{ end }}
 </article>
 {{ end }}
