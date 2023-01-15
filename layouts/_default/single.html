@@ -22,8 +22,9 @@
   </div>
 
   
-     <div  class="article-comments">
-       <div id="cusdis_thread" 
+<!-- Comments by Cusdis -->
+  <h4>Comments</h4>
+  <div id="cusdis_thread" 
 	  data-host="https://cusdis.com"
 	  data-app-id="{{ .Site.Params.cusdisId }}"
 	  data-page-id="{{ .File.UniqueID }}"
@@ -31,6 +32,5 @@
 	  data-page-title="{{ .Title }}">
        </div>
        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-     </div>
 </article>
 {{ end }}
