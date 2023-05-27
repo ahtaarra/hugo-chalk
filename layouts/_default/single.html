@@ -27,7 +27,7 @@
   <h2>Comments</h2>
   <p>You can use your Mastodon account to reply to this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">post</a>.</p>
   <p><button id="replyButton" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">Reply</button></p>
-  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
+  <p id="mastodon-comments-list"><button id="load-comment">Load comments 1</button></p>
   <dialog id="toot-reply" class="mastodon" data-component="dialog">
     <h3>Reply to {{ .username }}'s post</h3>
     <p>
@@ -122,7 +122,7 @@
                 document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true}));
               });
           } else {
-            document.getElementById('mastodon-comments-list').innerHTML = "<p>Not comments found</p>";
+            document.getElementById('mastodon-comments-list').innerHTML = "<p>No comments found</p>";
           }
         });
       });
