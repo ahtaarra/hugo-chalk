@@ -27,7 +27,7 @@
   <h2>Comments</h2>
   <p>You can use your Mastodon account to reply to this <a class="link" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">post</a>.</p>
   <p><button id="replyButton" href="https://{{ .host }}/@{{ .username }}/{{ .id }}">Reply</button></p>
-  <p id="mastodon-comments-list"><button id="load-comment">Load comments 1</button></p>
+  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
   <dialog id="toot-reply" class="mastodon" data-component="dialog">
     <h3>Reply to {{ .username }}'s post</h3>
     <p>
@@ -41,7 +41,6 @@
       <button class="button" id="cancelButton">Close</button>
     </div>
   </dialog>
-  <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
   <noscript><p>You need JavaScript to view the comments.</p></noscript>
   <script src="/assets/js/purify.min.js"></script>
   <script type="text/javascript">
