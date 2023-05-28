@@ -29,3 +29,5 @@
 {{ with site.Params.chalk.theme_toggle }}
   <script src="{{ (resources.Get `javascripts/themetoggle.js` | resources.Minify ).Permalink }}"></script>
 {{ end }}
+
+<script src="{{ (resources.Get `javascripts/purify.min.js`).Permalink }}"></script>
