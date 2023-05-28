@@ -1,4 +1,14 @@
+# hugo-chalk
 
+This is a fork of [the original hugo theme based on Chalk](https://github.com/ph-ph/chalk) by [Dzmitry Kishylau](https://github.com/ph-ph).
+
+The theme is customized to my needs:
+- Personalized footer
+- Personalized social icons, including my Mastodon link
+- Two custom shortcodes for figures with a caption including link and license.
+- Comments hosted on Mastodon thanks to [Carl Schwan](https://carlschwan.eu/2020/12/29/adding-comments-to-your-static-blog-with-mastodon/) :)
+
+Below I left the documentation of the original repo.
 
 # Chalk
 Chalk is a port of [Nielsen Ramon's Jekyll theme](https://github.com/nielsenramon/chalk) to [Hugo](https://gohugo.io) .
